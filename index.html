@@ -9,15 +9,52 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-        <h1>Weather Dashboard</h1>
+        <h1 class="py-3 text-center title-banner">Weather Dashboard</h1>
     
-        <h2>Search for a City</h2>
-        <textarea id= "subject"></textarea>
-        <button class= "search">Search</button>
-    
-        <div></div>
-    
-        <h2>5-Day Forecast</h2>
+        <div class="row ml-3">
+
+          <div class="col-4">
+          <div class="row">
+
+            <h2 class="ml-5 col-12">Search for a City:</h2>
+          
+            <div class="ml-5 mb-3 col-12">
+              <input class="subject" placeholder="Enter a City"></input>
+              <button class="search">Search</button>
+            </div>
+        
+            <div class="ml-5 mb-3 col-12">
+              <div class="card" style="width: 18rem;">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Example</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          </div>
+
+          <div class="col-8">
+          <div class="row">
+        
+            <div class="col-12 mt-3 mb-3">
+                <div class="card current-box">
+                  <div class="card-body">
+                    <h2 class="card-title current-city"></h2>
+                    <p class="card-text current-temp"></p>
+                    <p class="card-text current-hum"></p>
+                    <p class="card-text current-wind"></p>
+                    <p class="card-text current-uv"></p>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="col-12 forecast-banner">
+              <div class="row ml-1 forecast-list"></div>
+            </div>
+
+          </div>
+          </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
