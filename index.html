@@ -9,24 +9,28 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-        <h1 class="py-3 text-center title-banner">Weather Dashboard</h1>
+        <div class="navbar w-100 py-3 mb-3 title-banner">
+          <h1 class="offset-4">Weather Dashboard</h1>
+        </div>
+
     
         <div class="row ml-3">
 
-          <div class="col-4">
+          <div class="col-lg-4">
           <div class="row">
 
-            <h2 class="ml-5 col-12">Search for a City:</h2>
+            <h2 class="ml-3 col-12">Search for a City:</h2>
           
             <div class="ml-5 mb-3 col-12">
               <input class="subject" placeholder="Enter a City"></input>
               <button class="search">Search</button>
             </div>
         
+            <h2 class="ml-3 mt-3 col-12">Previous Searches:</h2>
             <div class="ml-5 mb-3 col-12">
               <div class="card" style="width: 18rem;">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Example</li>
+                <ul class="list-group list-group-flush prev-list"> 
+                    <button class='clear mt-1'>Clear Results</button>
                 </ul>
               </div>
             </div>
@@ -34,7 +38,7 @@
           </div>
           </div>
 
-          <div class="col-8">
+          <div class="col-lg-8">
           <div class="row">
         
             <div class="col-12 mt-3 mb-3">
@@ -50,7 +54,9 @@
             </div>
             
             <div class="col-12 forecast-banner">
-              <div class="row ml-1 forecast-list"></div>
+              <h2 class='col-12'>5-Day Forecast:</h2>
+              <div class="row ml-1 card-group forecast-list"></div>
+                
             </div>
 
           </div>
