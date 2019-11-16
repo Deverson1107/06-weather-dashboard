@@ -10,8 +10,12 @@
     padding-top: 10px;
 }
 
+.navbar {
+    margin-right: 0;
+}
+
 .current-box {
-    width: 850px;
+    margin-right: 10px;
 }
 
 input {
